@@ -1,10 +1,9 @@
 <section class="disqus">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
-
-      var disqus_config = function () {
+        var disqus_config = function () {
             this.page.url = '{{ site.url }}{{ page.url | replace:"index.html","" }}';
-            this.page.identifier = {{ site.disqus.shortname }}';
+            this.page.identifier = '{{ page.id }}';
         };
         var disqus_shortname = '{{ site.disqus.shortname }}';
         var disqus_developer = 0;
